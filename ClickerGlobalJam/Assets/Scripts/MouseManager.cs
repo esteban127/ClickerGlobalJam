@@ -24,7 +24,7 @@ public class MouseManager : MonoBehaviour
             {
                 if (Input.touches.Length >= 0)
                 {
-                    if (Input.touches[0].phase == TouchPhase.Began)
+                    if (Input.touches[0].phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(0))
                     {
                         gameManager.Tap();
                         TriggerExplosion(Camera.main.ScreenToWorldPoint(Input.touches[0].position) + explosionOffset);

@@ -1,0 +1,631 @@
+fileFormatVersion: 2
+guid: de6166f4baf5b864391e42d79bde264a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3656372096271148155
+    second: hammer-2_0
+  - first:
+      213: 5046430278669845113
+    second: hammer-2_1
+  - first:
+      213: 1547677844608146543
+    second: hammer-2_2
+  - first:
+      213: 9129520953975190571
+    second: hammer-2_3
+  - first:
+      213: -8503245753675791051
+    second: hammer-2_4
+  - first:
+      213: 1732809633486383302
+    second: hammer-2_5
+  - first:
+      213: -3044533590431084957
+    second: hammer-2_6
+  - first:
+      213: -4920003755053656174
+    second: hammer-2_7
+  - first:
+      213: 4621125221685411770
+    second: hammer-2_8
+  - first:
+      213: -3924332423982418428
+    second: hammer-2_9
+  - first:
+      213: 5515108406047746676
+    second: hammer-2_10
+  - first:
+      213: 5488937271887874197
+    second: hammer-2_11
+  - first:
+      213: -6922057553763858372
+    second: hammer-2_12
+  - first:
+      213: 6411781244964152571
+    second: hammer-2_13
+  - first:
+      213: 3419909217153713236
+    second: hammer-2_14
+  - first:
+      213: 172573111504461905
+    second: hammer-2_15
+  - first:
+      213: -5919268663942985759
+    second: hammer-2_16
+  - first:
+      213: 3387987323153207559
+    second: hammer-2_17
+  - first:
+      213: -7252141512221382296
+    second: hammer-2_18
+  - first:
+      213: 3263369157780013893
+    second: hammer-2_19
+  - first:
+      213: -5954804551682622689
+    second: hammer-2_20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hammer-2_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1832
+        width: 233
+        height: 352
+      alignment: 9
+      pivot: {x: 0.49415445, y: 0.12633376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0042f302f18574438343344794f0e08
+      internalID: -3656372096271148155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1832
+        width: 233
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c03b76d7e5f3564b988de853de2101d
+      internalID: 5046430278669845113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_2
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1995
+        width: 353
+        height: 232
+      alignment: 9
+      pivot: {x: 0.09457268, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a41c6d2156fed448abb9eb37533cef
+      internalID: 1547677844608146543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_3
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1897
+        width: 341
+        height: 343
+      alignment: 9
+      pivot: {x: 0.1209212, y: 0.13659135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5b8de1148edca46a425bc0f0b64548
+      internalID: 9129520953975190571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_4
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 1774
+        width: 231
+        height: 352
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d78eae79bac0f47906a86363f2212c
+      internalID: -8503245753675791051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_5
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1719
+        width: 353
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d9ec688c2a68145a26a89a95ee161d
+      internalID: 1732809633486383302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_6
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1285
+        width: 233
+        height: 354
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.12844418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4600b0303e2ade84bac5160694d2c9f0
+      internalID: -3044533590431084957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_7
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1285
+        width: 233
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf26d654f9cbfc4eb65f6e36a4952b5
+      internalID: -4920003755053656174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_8
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1448
+        width: 353
+        height: 233
+      alignment: 9
+      pivot: {x: 0.12739092, y: 0.5000011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9358d007dc94a44498d81f42d76c8620
+      internalID: 4621125221685411770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_9
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 1350
+        width: 341
+        height: 345
+      alignment: 9
+      pivot: {x: 0.14934425, y: 0.15341018}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e441020a641d844aa216b4abfc7b73
+      internalID: -3924332423982418428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_10
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1173
+        width: 353
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 184744f8ed8a5b74cbf3017737ec82c7
+      internalID: 5515108406047746676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_11
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 705
+        width: 233
+        height: 353
+      alignment: 9
+      pivot: {x: 0.47434056, y: 0.16126491}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e192e22b1d3ca4590978c8be938e41
+      internalID: 5488937271887874197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_12
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 705
+        width: 233
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acaa136ef1ee2e4cbdbbd622115fc7b
+      internalID: -6922057553763858372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 867
+        width: 353
+        height: 234
+      alignment: 9
+      pivot: {x: 0.12739092, y: 0.5000011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c603d96cfbf31294fb91a050616fd7b1
+      internalID: 6411781244964152571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_14
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 770
+        width: 341
+        height: 343
+      alignment: 9
+      pivot: {x: 0.14934425, y: 0.16881968}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e6121db98492b34d8bef336ebe7d1bd
+      internalID: 3419909217153713236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_15
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 591
+        width: 353
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab16237a4c0ad94a9437433fec2f511
+      internalID: 172573111504461905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_16
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 133
+        width: 233
+        height: 411
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.121787265}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f857188c8079847832797b4322afdf
+      internalID: -5919268663942985759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 133
+        width: 233
+        height: 411
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339aced89e5f40f459ecc69c950b37fb
+      internalID: 3387987323153207559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_18
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 323
+        width: 411
+        height: 232
+      alignment: 9
+      pivot: {x: 0.107239954, y: 0.50000054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2fdcc0e3743d54cab113278280242d
+      internalID: -7252141512221382296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_19
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 217
+        width: 342
+        height: 342
+      alignment: 9
+      pivot: {x: 0.15036957, y: 0.15036984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8434c13651a13474d83cec577b6b63c6
+      internalID: 3263369157780013893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hammer-2_20
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 68
+        width: 411
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4878ef54c018fc44b8d58166400915b5
+      internalID: -5954804551682622689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

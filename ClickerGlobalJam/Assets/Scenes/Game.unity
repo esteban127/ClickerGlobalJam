@@ -507,11 +507,11 @@ RectTransform:
   m_Father: {fileID: 23726261}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.175, y: 0.35}
-  m_AnchorMax: {x: 0.3, y: 0.7}
+  m_AnchorMin: {x: 0.14344443, y: 0.29555604}
+  m_AnchorMax: {x: 0.3185556, y: 0.75444394}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.44750932, y: 0.08664015}
 --- !u!114 &260514034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,13 +525,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.67689127, g: 0.6886792, b: 0.38656995, a: 1}
+  m_Color: {r: 0.9298908, g: 0.9528302, b: 0.36405307, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a9b5cea8b0357f48becdd859b66b1bf, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1067,7 +1067,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a9b5cea8b0357f48becdd859b66b1bf, type: 3}
+  m_Sprite: {fileID: -3656372096271148155, guid: de6166f4baf5b864391e42d79bde264a,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2055,10 +2056,10 @@ MonoBehaviour:
   coin: {fileID: 852544591}
   hammerImg: {fileID: 575961730}
   hammersSprite:
-  - {fileID: 21300000, guid: 7a9b5cea8b0357f48becdd859b66b1bf, type: 3}
-  - {fileID: 21300000, guid: a1c7db5df1bac4c4d9aad91aa809c440, type: 3}
-  - {fileID: 21300000, guid: 7a9b5cea8b0357f48becdd859b66b1bf, type: 3}
-  - {fileID: 21300000, guid: a1c7db5df1bac4c4d9aad91aa809c440, type: 3}
+  - {fileID: -3656372096271148155, guid: de6166f4baf5b864391e42d79bde264a, type: 3}
+  - {fileID: -3044533590431084957, guid: de6166f4baf5b864391e42d79bde264a, type: 3}
+  - {fileID: 5488937271887874197, guid: de6166f4baf5b864391e42d79bde264a, type: 3}
+  - {fileID: -5919268663942985759, guid: de6166f4baf5b864391e42d79bde264a, type: 3}
 --- !u!224 &1431993026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2868,7 +2869,7 @@ MonoBehaviour:
   customCursor: {fileID: 906562831}
   DefaultPointer: {fileID: 21300000, guid: 7a9b5cea8b0357f48becdd859b66b1bf, type: 3}
   gameManager: {fileID: 615048486}
-  hammerOffset: {x: 0, y: 0, z: 10}
+  hammerOffset: {x: -1.5, y: 0, z: 10}
   explosionOffset: {x: 0, y: 0, z: 10}
   explosionPool: {fileID: 2009631038}
   audioManager: {fileID: 313065618}
