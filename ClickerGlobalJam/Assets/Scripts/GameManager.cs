@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int[] enemiesValues;
     [SerializeField] string[] enemiesNames;
     [SerializeField] Sprite[] enemiesSprites;
+    [SerializeField] GameObject endScreen;
     int currentEnemy = 0;
     int currentEnemyHP;
     int currentGold = 0;
@@ -23,13 +24,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject enemy;
     [SerializeField] HpBarManager hpBar;
     [SerializeField] LvlUpButton lvlUpButton;
-    
+    [SerializeField] GameObject customCursor;
+
     private void Start()
     {
         currentEnemyHP = enemiesValues[currentEnemy];
         ChangeEnemy();
         ActualizateGold();
         ActualizateButton();
+
     }
 
     public void Tap()
@@ -65,7 +68,7 @@ public class GameManager : MonoBehaviour
 
     private void TriggerEndGame()
     {
-        throw new NotImplementedException();
+        endScreen.SetActive(true);
     }
 
     private void ChangeEnemy()
@@ -90,6 +93,7 @@ public class GameManager : MonoBehaviour
         if(currentGold >= hammerCost[hammerLevel + 1])
         {
             hammerLevel++;
+            customCursor.GetComponent<Animator>().SetInteger("CurrentHammerLvl", hammerLevel);
             currentGold -= hammerCost[hammerLevel];
             ActualizateGold();
             currentDamage = hammerDamage[hammerLevel];            
@@ -101,7 +105,6 @@ public class GameManager : MonoBehaviour
         currentGold += ammount;
         if(hammerLevel != MAX_HAMMER_LVL && currentGold >= hammerCost[hammerLevel + 1])
         {
-            Debug.Log("AAAAAAAA");
             lvlUpButton.GetComponent<Button>().interactable = true;
         }
         ActualizateGold();
@@ -113,16 +116,23 @@ public class GameManager : MonoBehaviour
         if (hammerLevel != MAX_HAMMER_LVL)
         {
             lvlUpButton.Actualizate(hammerCost[hammerLevel + 1], currentDamage);
-
+            if(hammerLevel == 4)
+            {
+                lvlUpButton.ChangeHammer(1);
+            }
+            if (hammerLevel == 9)
+            {
+                lvlUpButton.ChangeHammer(2);
+            }
             if (currentGold >= hammerCost[hammerLevel + 1])
             {
-                Debug.Log("AAAAAAAA");
                 lvlUpButton.GetComponent<Button>().interactable = true;
             }
         }
         else
         {
             lvlUpButton.SetOnMaxLvl(currentDamage);
+            lvlUpButton.ChangeHammer(3);
         }
     }
 

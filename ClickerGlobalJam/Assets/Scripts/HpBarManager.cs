@@ -15,15 +15,15 @@ public class HpBarManager : MonoBehaviour
     {
         enemyName.text = name;
         currentMaxHP = health;
-        currentHP = health;
+        currentHP = 0;
         slider.value = 1;
         hpText.text = currentHP.ToString() + " / " + currentMaxHP.ToString();
     }
 
     public void ActualizateLife(int newHp)
     {
-        currentHP = newHp;
-        slider.value = currentHP/currentMaxHP;
+        currentHP = currentMaxHP - newHp;
+        slider.value = (float)currentHP/(float)currentMaxHP;
         hpText.text = currentHP.ToString() + " / " + currentMaxHP.ToString();
     }
 }
