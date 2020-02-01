@@ -16,7 +16,7 @@ public class LvlUpButton : MonoBehaviour
         cost = _cost;
         damage = _damage;
         costTxt.text = cost.ToString();
-        damageTxt.text = damage.ToString();
+        damageTxt.text = "Current damage: " + damage.ToString();
     }
 
     internal void SetOnMaxLvl(int _damage)
@@ -24,6 +24,6 @@ public class LvlUpButton : MonoBehaviour
         cost = 9999999;
         costTxt.text = "MAX";
         damage = _damage;
-        damageTxt.text = damage.ToString();
+        damageTxt.text = "Current damage: " + damage.ToString();
     }
 }

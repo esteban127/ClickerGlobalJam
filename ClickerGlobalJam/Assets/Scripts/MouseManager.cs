@@ -9,12 +9,7 @@ public class MouseManager : MonoBehaviour
     [SerializeField] Sprite DefaultPointer;
     [SerializeField] GameManager gameManager;
     [SerializeField] Vector3 hammerOffset;
-
-    void Start()
-    {
-        
-    }
-
+    
     void Update()
     {
         if (!EventSystem.current.IsPointerOverGameObject())

@@ -8,39 +8,28 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] int[] hammerCost;
     [SerializeField] int[] hammerDamage;
-    [SerializeField] int[] enemieValues;
-
-    [SerializeField] Sprite[] hammerSprite;
-    [SerializeField] Sprite[] enemies;
+    [SerializeField] int[] enemiesValues;
+    [SerializeField] string[] enemiesNames;
+    [SerializeField] Sprite[] enemiesSprites;
     int currentEnemy = 0;
     int currentEnemyHP;
     int currentGold = 0;
     int currentDamage = 1;
     int hammerLevel;
 
-    const int MAX_HAMMER_LVL = 13;
+    const int MAX_HAMMER_LVL = 12;
 
+    [SerializeField] Text goldText;
     [SerializeField] GameObject enemy;
-    [SerializeField]LvlUpButton lvlUpButton;
-    public Sprite GetCurrentHammer()
-    {
-        if (hammerLevel == MAX_HAMMER_LVL)
-        {
-            return hammerSprite[3];
-        }
-        if( hammerLevel >= 10)
-        {
-            return hammerSprite[2];
-        }
-        if (hammerLevel >= 5)
-        {
-            return hammerSprite[1];
-        }
-        return hammerSprite[0];
-    }
+    [SerializeField] HpBarManager hpBar;
+    [SerializeField] LvlUpButton lvlUpButton;
+    
     private void Start()
     {
-        currentEnemyHP = enemieValues[currentEnemy];
+        currentEnemyHP = enemiesValues[currentEnemy];
+        ChangeEnemy();
+        ActualizateGold();
+        ActualizateButton();
     }
 
     public void Tap()
@@ -60,7 +49,7 @@ public class GameManager : MonoBehaviour
         }
         if(currentEnemyHP<= 0)
         {
-            if(currentEnemy < enemieValues.Length - 1)
+            if(currentEnemy < enemiesValues.Length - 1)
             {
                 currentEnemy++;
                 ChangeEnemy();
@@ -81,19 +70,19 @@ public class GameManager : MonoBehaviour
 
     private void ChangeEnemy()
     {
-        throw new NotImplementedException();
+        currentEnemyHP = enemiesValues[currentEnemy];
+        enemy.GetComponent<SpriteRenderer>().sprite = enemiesSprites[currentEnemy];
+        hpBar.SetNewEnemy(enemiesNames[currentEnemy], enemiesValues[currentEnemy]);
     }
 
-    private void ActuaulizateGold()
+    private void ActualizateGold()
     {
-        Debug.Log("Not implemented");
-        //throw new NotImplementedException();
+        goldText.text = currentGold.ToString();
     }
 
     private void ActualizateEnemyHP()
     {
-        Debug.Log("Not implemented");
-        //throw new NotImplementedException();
+        hpBar.ActualizateLife(currentEnemyHP);
     }
 
     public void LevelUpHammer()
@@ -102,7 +91,7 @@ public class GameManager : MonoBehaviour
         {
             hammerLevel++;
             currentGold -= hammerCost[hammerLevel];
-            ActuaulizateGold();
+            ActualizateGold();
             currentDamage = hammerDamage[hammerLevel];            
             ActualizateButton();
         }
@@ -112,21 +101,23 @@ public class GameManager : MonoBehaviour
         currentGold += ammount;
         if(hammerLevel != MAX_HAMMER_LVL && currentGold >= hammerCost[hammerLevel + 1])
         {
-            lvlUpButton.GetComponent<Button>().enabled = true;
+            Debug.Log("AAAAAAAA");
+            lvlUpButton.GetComponent<Button>().interactable = true;
         }
-        ActuaulizateGold();
+        ActualizateGold();
     }
 
     private void ActualizateButton()
     {
-        lvlUpButton.GetComponent<Button>().enabled = false;
+        lvlUpButton.GetComponent<Button>().interactable = false;
         if (hammerLevel != MAX_HAMMER_LVL)
         {
             lvlUpButton.Actualizate(hammerCost[hammerLevel + 1], currentDamage);
 
             if (currentGold >= hammerCost[hammerLevel + 1])
             {
-                lvlUpButton.GetComponent<Button>().enabled = true;
+                Debug.Log("AAAAAAAA");
+                lvlUpButton.GetComponent<Button>().interactable = true;
             }
         }
         else

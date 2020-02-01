@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+ClickerGlobalJam/[Ll]ibrary/
+ClickerGlobalJam/[Tt]emp/
+ClickerGlobalJam/[Oo]bj/
+ClickerGlobalJam/[Bb]uild/
+ClickerGlobalJam/[Bb]uilds/
+ClickerGlobalJam/[Ll]ogs/
+ClickerGlobalJam/[Mm]emoryCaptures/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
