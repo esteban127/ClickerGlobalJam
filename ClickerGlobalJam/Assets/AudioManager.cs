@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] Dictionary<string,AudioClip> sfx;
+    [SerializeField] AudioClip[] sfx;
     [SerializeField] AudioSource sfxSource;
 
-    public void PlaySfx(string key)
+    public void PlaySfx(int key,float pitch,float volume)
     {
+        sfxSource.pitch = pitch;
+        sfxSource.volume = volume;
         sfxSource.PlayOneShot(sfx[key]);
     }
     

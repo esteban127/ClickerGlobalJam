@@ -54,13 +54,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
     - Class: 104
-      Script: {instanceID: 0}
-    - Class: 111
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9674}
@@ -75,21 +75,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 10282}
+      Script: {instanceID: 10230}
     - Class: 114
-      Script: {instanceID: 10380}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 10656}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 11130}
+      Script: {instanceID: 10382}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 10658}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11132}
     - Class: 114
-      Script: {instanceID: 15874}
+      Script: {instanceID: 11164}
     - Class: 114
-      Script: {instanceID: 19144}
+      Script: {instanceID: 11504}
+    - Class: 114
+      Script: {instanceID: 11538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,15 +132,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9878}
     - Class: 114
-      Script: {instanceID: 10282}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 10320}
+      Script: {instanceID: 10322}
     - Class: 114
-      Script: {instanceID: 10656}
+      Script: {instanceID: 10658}
     - Class: 114
-      Script: {instanceID: 11130}
+      Script: {instanceID: 11132}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -186,7 +188,7 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: bcad661aa3a0757fd1278e5f708ff3d4
+      Hash: 511eadf3a4860fb62832eeb7956e4441
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -276,7 +278,7 @@ ScriptsOnlyBuild:
     className: PhysicsRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 537b2334b9b34017b1a7ef649124cef5
+      Hash: 1f96f6eafb806b1d961c5a2b8b34e1da
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LvlUpButton
@@ -328,6 +330,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 5b6c9e98b37201c1c8c9b68d31de0d81
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -498,6 +506,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ExplosionBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -598,20 +612,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ExplosionBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: e0cee41dfab70e6468e90706987e32b4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
   platform: 5
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Usuario/Desktop/build/ClickerGlobalJam.exe
+  playerPath: C:/Users/Usuario/Desktop/GameJam2020/PCBuild/ClickerGlobalJam.exe

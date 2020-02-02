@@ -16,7 +16,7 @@ public class HpBarManager : MonoBehaviour
         enemyName.text = name;
         currentMaxHP = health;
         currentHP = 0;
-        slider.value = 1;
+        slider.value = 0;
         hpText.text = currentHP.ToString() + " / " + currentMaxHP.ToString();
     }
 

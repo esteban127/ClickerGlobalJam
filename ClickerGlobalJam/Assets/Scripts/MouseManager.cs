@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,12 +22,17 @@ public class MouseManager : MonoBehaviour
             
             if(Application.platform == RuntimePlatform.Android)
             {
+                
                 if (Input.touches.Length >= 0)
                 {
                     if (Input.touches[0].phase == TouchPhase.Began && !EventSystem.current.IsPointerOverGameObject(0))
                     {
-                        gameManager.Tap();
-                        TriggerExplosion(Camera.main.ScreenToWorldPoint(Input.touches[0].position) + explosionOffset);
+                        if (gameManager.canTap)
+                        {
+                            gameManager.Tap();
+                            TriggerExplosion(Camera.main.ScreenToWorldPoint(Input.touches[0].position) + explosionOffset);
+
+                        }
                     }
                 }
             }            
@@ -37,9 +42,12 @@ public class MouseManager : MonoBehaviour
                 customCursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + hammerOffset;
                 if (Input.GetMouseButtonDown(0))
                 {
-                    customCursor.GetComponent<Animator>().SetTrigger("Tap");
-                    gameManager.Tap();
-                    TriggerExplosion(Camera.main.ScreenToWorldPoint(Input.mousePosition) + explosionOffset);
+                    if (gameManager.canTap)
+                    {
+                        customCursor.GetComponent<Animator>().SetTrigger("Tap");
+                        gameManager.Tap();
+                        TriggerExplosion(Camera.main.ScreenToWorldPoint(Input.mousePosition) + explosionOffset);
+                    }                    
                 }
             }            
         }
@@ -57,6 +65,8 @@ public class MouseManager : MonoBehaviour
         if(explosion!= null)
         {
             explosion.SetActive(true);
+            float pitch = Random.Range(0.9f, 1.2f);
+            audioManager.PlaySfx(0,pitch,.5f);
             explosion.transform.position = pos;
             explosion.GetComponent<ExplosionBehaviour>().Explode();
         }

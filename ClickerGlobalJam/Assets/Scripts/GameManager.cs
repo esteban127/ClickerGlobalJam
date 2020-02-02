@@ -12,11 +12,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] string[] enemiesNames;
     [SerializeField] Sprite[] enemiesSprites;
     [SerializeField] GameObject endScreen;
+    [SerializeField] GameObject[] cracks;
+    [SerializeField] GameObject[] bigExplosions;
+    [SerializeField] AudioManager audioManager;
     int currentEnemy = 0;
-    int currentEnemyHP;
+    int currentEnemyHP;    
     int currentGold = 0;
     int currentDamage = 1;
     int hammerLevel;
+
+    public bool canTap = true;
 
     const int MAX_HAMMER_LVL = 12;
 
@@ -50,29 +55,72 @@ public class GameManager : MonoBehaviour
             AddGold(actualDamage);
 
         }
+        if (currentEnemyHP < (float)enemiesValues[currentEnemy] / 3.0f)
+        {
+            cracks[0].SetActive(false);
+        }
+        if (currentEnemyHP < ((float)enemiesValues[currentEnemy] / 3.0f)*2.0f)
+        {
+            cracks[1].SetActive(false);
+        }
         if(currentEnemyHP<= 0)
         {
+            cracks[2].SetActive(false);
             if(currentEnemy < enemiesValues.Length - 1)
             {
                 currentEnemy++;
-                ChangeEnemy();
+                StartCoroutine(ChangeEnemyAnimation(false));
             }
             else
             {
-                TriggerEndGame();
+                StartCoroutine(ChangeEnemyAnimation(true));
             }
         }
 
         ActualizateEnemyHP();
     }
 
+    IEnumerator ChangeEnemyAnimation(bool end)
+    {
+        canTap = false;
+        foreach(GameObject bigExplosion in bigExplosions)
+        {
+            bigExplosion.SetActive(true);
+            bigExplosion.GetComponent<ExplosionBehaviour>().Explode();
+        }
+        yield return new WaitForSeconds(1.0f);
+        audioManager.PlaySfx(1, 1, 1);
+        enemy.GetComponent<Animator>().SetTrigger("Done");
+        yield return new WaitForSeconds(1.0f);
+
+        if (!end)
+        {
+            ChangeEnemy();
+        }
+        else
+        {
+            TriggerEndGame();
+        }
+        yield return new WaitForSeconds(1.0f);
+        ReturnInput();
+    }
+
     private void TriggerEndGame()
     {
         endScreen.SetActive(true);
     }
+    private void ReturnInput()
+    {
 
+        canTap = true;
+    }
     private void ChangeEnemy()
     {
+        enemy.GetComponent<Animator>().SetTrigger("Reset");
+        foreach (GameObject crack in cracks)
+        {
+            crack.SetActive(true);
+        }
         currentEnemyHP = enemiesValues[currentEnemy];
         enemy.GetComponent<SpriteRenderer>().sprite = enemiesSprites[currentEnemy];
         hpBar.SetNewEnemy(enemiesNames[currentEnemy], enemiesValues[currentEnemy]);
